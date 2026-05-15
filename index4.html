@@ -7,6 +7,44 @@
     <title>Belajar HTML SEMANTIC</title>
 
     <style>
+        .hero-section {
+            background-color: #efef8f;
+            padding: 20px;
+        }
+
+        .hero-section .hero-flex-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .hero-section .hero-flex-container>div {
+            width: 50%;
+            height: 500px;
+        }
+
+        .hero-section .hero-flex-container .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .hero-section .hero-flex-container .content button {
+            width: 150px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .hero-section .hero-flex-container .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2rem;
+        }
+
+
+
+
         .services-card {
             text-align: center;
             padding: 20px;
@@ -37,6 +75,23 @@
             height: 500px;
             object-fit: cover;
         }
+
+        .blog-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .blog-section .blog-flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-section .blog-flex-container .blog-card {
+            background-color: #efef8f;
+            padding: 2rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -66,10 +121,19 @@
     <main>
         <!-- SECTION HERO -->
         <section class="hero-section">
-            <h2>Solusi pengiriman cepat dan akurat!</h2>
-            <p>Kami menyediakan pengiriman cepat dan akurat yang pasti tim kami adalah proffesional</p>
 
-            <button>Pesan sekarang!</button>
+            <div class="hero-flex-container">
+                <div class="content">
+                    <h2>Solusi pengiriman cepat dan akurat!</h2>
+                    <p>Kami menyediakan pengiriman cepat dan akurat yang pasti tim kami adalah proffesional</p>
+
+                    <button>Pesan sekarang!</button>
+                </div>
+
+                <div class="image">
+                    <img src="images/pengiriman.jpg" alt="pengiriman cepat">
+                </div>
+            </div>
         </section>
 
         <section class="services-card">
@@ -96,9 +160,42 @@
             </div>
         </section>
 
-    </main>
+        <section class="blog-section">
+            <h2>Tips membuat masakan menu enak</h2>
+            <p>Pelajari cara membuat masakan menu enak hehe!</p>
 
+
+            <div class="blog-flex-container">
+                <article class="blog-card">
+                    <h3>Tips 1 cara membuat menu masakan yang enak</h3>
+                    <p class="post-date">Diposting pada 8 april yang lalu</p>
+                    <p>Caranya adalah yang pertama kamu harus menyajikannya dengan tulus, dan penuh kasih sayang</p>
+                    <a href="#baca-selengkapnya">Baca selengkapnya</a>
+                </article>
+
+                <article class="blog-card">
+                    <h3>Tips 1 cara membuat menu masakan yang enak</h3>
+                    <p class="post-date">Diposting pada 8 april yang lalu</p>
+                    <p>Caranya adalah yang pertama kamu harus menyajikannya dengan tulus, dan penuh kasih sayang</p>
+                    <a href="#baca-selengkapnya">Baca selengkapnya</a>
+                </article>
+
+                <article class="blog-card">
+                    <h3>Tips 1 cara membuat menu masakan yang enak</h3>
+                    <p class="post-date">Diposting pada 8 april yang lalu</p>
+                    <p>Caranya adalah yang pertama kamu harus menyajikannya dengan tulus, dan penuh kasih sayang</p>
+                    <a href="#baca-selengkapnya">Baca selengkapnya</a>
+                </article>
+
+
+
+            </div>
+
+        </section>
+
+    </main>
     <!-- CONTOH PENGGUNAAN ARTICLE -->
+
 
 
 </body>
