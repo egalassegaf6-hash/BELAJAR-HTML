@@ -5,12 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar HTML SEMANTIC</title>
+
+    <style>
+        .services-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .services-card .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+
+        }
+
+        .services-card .grid-container .item-1,
+        .services-card .grid-container .item-2,
+        .services-card .grid-container .item-3 {
+            background-color: #efef8f;
+            padding: 2rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+
+        }
+
+        .services-card .grid-container img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- CONTOH PENGGUNAAN SECTION -->
-    <section>
+    <!-- <section>
         <h1>INI SECTION 1</h1>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae cum voluptatem sit error in magni cupiditate,
@@ -26,7 +59,47 @@
             laudantium, consequatur et, in amet cumque sit hic ullam esse quas cupiditate molestias inventore suscipit
             maiores. Repellat qui sunt sequi quas veritatis nam? Sunt similique magnam eveniet dolorum. Asperiores
             officia recusandae ab error quaerat in?</p>
-    </section>
+    </section> -->
+
+    <!-- STUDI KASUS PENGGUNAAN SECTION MEMBUAT HERO SECTION -->
+    <!-- konten -->
+    <main>
+        <!-- SECTION HERO -->
+        <section class="hero-section">
+            <h2>Solusi pengiriman cepat dan akurat!</h2>
+            <p>Kami menyediakan pengiriman cepat dan akurat yang pasti tim kami adalah proffesional</p>
+
+            <button>Pesan sekarang!</button>
+        </section>
+
+        <section class="services-card">
+            <h2>Ini adalah beberapa produk kami</h2>
+
+            <div class="grid-container">
+                <div class="item-1">
+                    <h3>Produk 1</h3>
+
+                    <img src="images/img1.jpg" alt="menu-makanan-1">
+                </div>
+
+                <div class="item-2">
+                    <h3>Produk 1</h3>
+
+                    <img src="images/img2.jpg" alt="menu-makanan-1">
+                </div>
+
+                <div class="item-3">
+                    <h3>Produk 1</h3>
+
+                    <img src="images/img3.jpg" alt="menu-makanan-1">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CONTOH PENGGUNAAN ARTICLE -->
+
 
 </body>
 
