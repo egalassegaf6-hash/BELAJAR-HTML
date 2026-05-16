@@ -7,41 +7,128 @@
     <title>Belajar DIV</title>
 
     <style>
+        body {
+            height: 10000vh;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            /* column-gap: 10px; */
+            gap: 10px;
+        }
+
         .container {
             background-color: #FFF4A3;
-            width: 50%;
             padding: 10px;
-            margin-bottom: 1rem;
         }
 
         .deskripsi {
             background-color: #4347bc;
-            width: 50%;
             padding: 20px;
+        }
+
+        .penutup {
+            background-color: #4347bc;
+            padding: 20px;
+
+        }
+
+        .flex-container {
+            display: flex;
+            margin-top: 2rem;
+            gap: 10px;
+        }
+
+        .nametag-1 {
+            background-color: #efef8f;
+            padding: 2rem;
+            width: 33%;
+        }
+
+        .nametag-2 {
+            background-color: #efef8f;
+            padding: 2rem;
+            width: 33%;
+        }
+
+        .nametag-3 {
+            background-color: #efef8f;
+            padding: 2rem;
+            width: 33%;
         }
     </style>
 </head>
 
 <body>
-    <!-- Contoh penggunaan DIV -->
-    <div class="container">
-        <h1>Halo nama saya Egal</h1>
-        <ul>
-            <li>Jurusan: Teknik Informatika</li>
-            <li>Umur : 25 Tahun </li>
-            <li>Hobi : Coding </li>
+    <div class="grid-container">
+        <!-- Contoh penggunaan DIV -->
+        <div class="container">
+            <h1>Halo nama saya Egal</h1>
+            <ul>
+                <li>Jurusan: Teknik Informatika</li>
+                <li>Umur : 25 Tahun </li>
+                <li>Hobi : Coding </li>
 
-            <li>
-                <a href="#">Kenalan yuk!</a>
-            </li>
-        </ul>
+                <li>
+                    <a href="#">Kenalan yuk!</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Penggunaan div ke 2 -->
+        <div class="deskripsi">
+            <h2>Mengenai saya: </h2>
+            <p>Hobi saya adalah coding, dan saya suka mempelajari teknologi baru</p>
+        </div>
+
+        <!-- Penggunaan DIV ke 3 -->
+        <div class="penutup">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore labore laborum quidem quod aliquam!
+                Odit, est. Accusamus exercitationem sint eaque, architecto maxime modi illum consequatur a magni beatae
+                numquam fugiat deleniti tempore alias laboriosam? Quam, reprehenderit. Dicta natus repellendus, velit in
+                sapiente ut recusandae quod sint modi laudantium ipsum odit minima consequuntur dolores beatae adipisci.
+                Minus unde voluptatum quo facere quos fuga vel voluptas quaerat nemo labore rem, blanditiis, doloribus
+                iure animi eos corrupti vero provident? Facilis dolorem, incidunt numquam est dolor accusamus nesciunt
+                in, culpa perspiciatis, officiis laborum! Rerum, totam. Temporibus corporis omnis ducimus magnam
+                voluptate dolorum, laudantium aspernatur.
+            </p>
+        </div>
     </div>
 
-    <!-- Penggunaan div ke 2 -->
-    <div class="deskripsi">
-        <h2>Mengenai saya: </h2>
-        <p>Hobi saya adalah coding, dan saya suka mempelajari teknologi baru</p>
+    <!-- Menggunakan flexbox -->
+    <div class="flex-container">
+        <div class="nametag-1">
+            <h2>Nama: Egal Assegaf</h2>
+            <ul>
+                <li>Pekerjaan : Programming</li>
+                <li>Hobi : Coding</li>
+                <li>Jurusan : Computer Science</li>
+            </ul>
+        </div>
+
+        <div class="nametag-2">
+            <h2>Nama: Adelia</h2>
+            <ul>
+                <li>Pekerjaan : Desainer</li>
+                <li>Hobi : Jalan-jalan</li>
+                <li>Jurusan : Ilmu Komunikasi</li>
+            </ul>
+        </div>
+
+        <div class="nametag-3">
+            <h2>Nama: Arga</h2>
+            <ul>
+                <li>Pekerjaan : Pegawai Pom</li>
+                <li>Hobi : Makan</li>
+                <li>Jurusan : Teknik Kendaraan</li>
+            </ul>
+        </div>
     </div>
+
+
+
 
 
 

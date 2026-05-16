@@ -7,6 +7,10 @@
     <title>Belajar HTML SEMANTIC</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         .hero-section {
             background-color: #efef8f;
             padding: 20px;
@@ -119,6 +123,52 @@
             text-decoration: none;
             color: black;
         }
+
+        .form-section {
+            padding: 20px;
+            background-color: #efef8f;
+        }
+
+        .form-section .form {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-section .form-parent {
+            width: 40%;
+            padding: 20px;
+            background-color: rgb(213, 218, 226);
+        }
+
+        .form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-section label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .form-section input,
+        .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn-submit {
+            background-color: #1890ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
     </style>
 </head>
 
@@ -216,8 +266,58 @@
                     <a href="#baca-selengkapnya">Baca selengkapnya</a>
                 </article>
             </div>
+        </section>
+
+        <!-- SECTION FORM -->
+        <section class="form-section">
+            <header>
+                <h2>Hubungi kami untuk informasi lebih lanjut</h2>
+                <p>
+                    Jika Anda memiliki pertanyaan atau ingin memesan layanan kami, jangan ragu untuk menghubungi kami
+                    melalui formulir di bawah ini. Kami siap membantu Anda dengan segala kebutuhan pengiriman Anda!
+                </p>
+            </header>
+
+            <div class="form">
+                <h2>Formulir Kontak</h2>
+
+                <form class="form-parent">
+                    <div class="form-group">
+                        <label for="nama-depan">Nama depan: </label>
+                        <input type="text" id="nama-depan" name="nama-depan" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nama-belakang">Nama belakang: </label>
+                        <input type="text" id="nama-belakang" name="nama-belakang" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Alamat Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggal-pengirim">Tanggal mengirim</label>
+                        <input type="date" id="tanggal-pengirim" name="tanggal-pengirim" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Masukkan pesan: </label>
+                        <textarea id="pesan" name="pesan" rows="5" required
+                            placeholder="Masukkan pesan atau keluhan anda disini"></textarea>
+                    </div>
+
+                    <!-- submit -->
+                    <button type="submit" class="btn-submit">Kirim pesan</button>
+                </form>
+
+            </div>
+
+
 
         </section>
+        <!-- SECTION FORM -->
 
     </main>
     <!-- CONTOH PENGGUNAAN ARTICLE -->
